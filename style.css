@@ -1,0 +1,171 @@
+/* Basic CSS Template */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;  
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5f9840;
+}
+
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+    
+}
+
+#ptop{
+    padding:  0 10%;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #315f16;
+}
+
+#ptop #logo {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #315f16;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    /* Optional: add a border for more definition */
+    border: 2px solid #e0e0e0;
+}
+
+#ptop #logo img {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap:20px;  
+}
+
+.elem h2{
+    color: #fff;
+    font-weight: 500;
+}
+
+#start{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color:#315f16
+}
+
+#stop{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color:#315f16
+}
+
+#reset{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color:#315f16
+}
+#pbottom{
+    padding: 20px;
+    gap:10px;
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+     align-items: center;
+      justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color:#315f16
+}
+
+
+
+.bubble{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    background-color: #5f9840;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color:#315f16 ; 
+}
+
+#pbottom .message {
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    width: 100%;
+  height: 100%;
+
+}
+
+.finalscore{
+    color:orange;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 4px;
+}
