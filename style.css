@@ -40,6 +40,8 @@ html,body{
     background-color: #315f16;
 }
 
+
+
 #ptop #logo {
     width: 70px;
     height: 70px;
@@ -51,7 +53,6 @@ html,body{
     font-weight: 500;
     color: #315f16;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    /* Optional: add a border for more definition */
     border: 2px solid #e0e0e0;
 }
 
@@ -160,8 +161,6 @@ html,body{
   justify-content: center;
     align-items: center;
    width: 100%;
- 
-
 }
 
 .finalscore{
@@ -169,4 +168,146 @@ html,body{
     font-size: 24px;
     font-weight: bold;
     margin: 0 4px;
+ }
+
+
+ 
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    #panel {
+        width: 95%;
+        height: 80vh;
+    }
+    
+    #ptop {
+        height: 70px;
+        padding: 0 5%;
+    }
+    
+    #ptop #logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #ptop #logo img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .elem {
+        gap: 10px;
+    }
+    
+    .elem h2 {
+        font-size: 14px;
+    }
+    
+    #start, #stop, #reset {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .box {
+        width: 25px;
+        height: 25px;
+    }
+    
+    #pbottom .message {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #panel {
+        width: 95%;
+        height: 85vh;
+    }
+    
+    #ptop {
+        height: 60px;
+        padding: 0 3%;
+        justify-content: space-around;
+    }
+    
+    #ptop #logo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    #ptop #logo img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .elem {
+        gap: 5px;
+    }
+    
+    .elem h2 {
+        font-size: 12px;
+    }
+    
+    #start, #stop, #reset {
+        width: 35px;
+        height: 35px;
+        font-size: 10px;
+        border-radius: 8px;
+    }
+    
+    .box {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    
+    .bubble {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #pbottom .message {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    
+    .finalscore {
+        font-size: 18px;
+    }
+}
+
+/* Specific adjustments for very small screens */
+@media screen and (max-width: 360px) {
+    #ptop {
+        padding: 0 2%;
+    }
+    
+    .elem h2 {
+        font-size: 10px;
+    }
+    
+    #start, #stop, #reset {
+        width: 30px;
+        height: 30px;
+        font-size: 8px;
+    }
+}
+
+/* Landscape mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    #panel {
+        height: 95vh;
+    }
+    
+    #ptop {
+        height: 50px;
+    }
+    
+    #pbottom {
+        height: calc(100% - 50px);
+    }
+    
+    #pbottom .message {
+        font-size: 14px;
+    }
 }
